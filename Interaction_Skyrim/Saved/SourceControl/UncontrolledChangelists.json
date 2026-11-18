@@ -1,0 +1,39 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/Levels/testMap.umap",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/BP_GameMode.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/BP_GameInstance.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/Input/IA_Look.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/Input/IA_Move.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/Input/IM_Context.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/BP_PlayerController.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/Input/IA_Jump.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_PlayerHUD.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/player/BP_PlayerCharacter.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/BP_GameState.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/BP_PlayerState.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Settings/BP_HUD.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/player/interface/BPI_Player.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/player/components/BPC_Move.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/player/components/BPC_Look.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_PauseMenu.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_SkillTreeContainer.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_Skill.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_InventoryMenu.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_Item.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_Compass.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/Items/Data/PDA_ItemData.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/Items/Data/BP_ItemClass.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/Items/Data/ItemData/DA_Chest.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/BPI_Widget.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/UI/WD_Item_InWorld.uasset",
+				"/home/dinzai/Unreal_GameDev/Interaction_Skyrim/Content/Game/Items/Factories/BP_ItemSpawner.uasset"
+			]
+		}
+	]
+}
