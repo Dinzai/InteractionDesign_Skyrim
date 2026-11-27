@@ -1,0 +1,109 @@
+Generating report for minidump
+
+Application version 5.6.1.0
+ ... built from changelist 44394996
+
+OS version Linux 6.8.0-149-generic (network name: GameDev)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: false  [File:./Runtime/Slate/Private/Widgets/Layout/SConstraintCanvas.cpp] [Line: 95] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Slate.so!SConstraintCanvas::FSlot::SetZOrder(float)::$_0::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Widgets/Layout/SConstraintCanvas.cpp:95]
+libUnrealEditor-UMG.so!UCanvasPanelSlot::execSetZOrder(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/CanvasPanelSlot.cpp:286]
+libUnrealEditor-CoreUObject.so!UFunction::Invoke(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:7460]
+libUnrealEditor-CoreUObject.so!UObject::CallFunction(FFrame&, void*, UFunction*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1175]
+libUnrealEditor-CoreUObject.so!UObject::execFinalFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:3278]
+libUnrealEditor-CoreUObject.so!UObject::ProcessContextOpcode(FFrame&, void*, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:509]
+libUnrealEditor-CoreUObject.so!ProcessLocalScriptFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:509]
+libUnrealEditor-CoreUObject.so!void ProcessScriptFunction<void (*)(UObject*, FFrame&, void*)>(UObject*, UFunction*, FFrame&, void*, void (*)(UObject*, FFrame&, void*)) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1067]
+libUnrealEditor-CoreUObject.so!ProcessLocalFunction(UObject*, UFunction*, FFrame&, void*)::$_0::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1320]
+libUnrealEditor-CoreUObject.so!ProcessLocalFunction(UObject*, UFunction*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1337]
+libUnrealEditor-CoreUObject.so!UObject::execLocalFinalFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:3292]
+libUnrealEditor-CoreUObject.so!ProcessLocalScriptFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:509]
+libUnrealEditor-CoreUObject.so!UObject::ProcessInternal(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1364]
+libUnrealEditor-CoreUObject.so!UFunction::Invoke(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:7460]
+libUnrealEditor-CoreUObject.so!UObject::ProcessEvent(UFunction*, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:2209]
+libUnrealEditor-UMG.so!UUserWidget::NativePreConstruct() [/mnt/horde/++UE5/Sync/Engine/Source/../Intermediate/Build/Linux/UnrealEditor/Inc/UMG/UHT/UserWidget.gen.cpp:4312]
+libUnrealEditor-UMG.so!UUserWidget::OnWidgetRebuilt() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/UserWidget.cpp:1160]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:1060]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UCanvasPanelSlot::BuildSlot(TSharedRef<SConstraintCanvas, (ESPMode)1>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/CanvasPanelSlot.cpp:36]
+libUnrealEditor-UMG.so!UCanvasPanel::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/CanvasPanel.cpp:64]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UCanvasPanelSlot::BuildSlot(TSharedRef<SConstraintCanvas, (ESPMode)1>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/CanvasPanelSlot.cpp:36]
+libUnrealEditor-UMG.so!UCanvasPanel::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/CanvasPanel.cpp:64]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UBorderSlot::BuildSlot(TSharedRef<SBorder, (ESPMode)1>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/BorderSlot.cpp:42]
+libUnrealEditor-UMG.so!UBorder::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Border.cpp:56]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UBorderSlot::BuildSlot(TSharedRef<SBorder, (ESPMode)1>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/BorderSlot.cpp:42]
+libUnrealEditor-UMG.so!UBorder::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Border.cpp:56]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!USizeBoxSlot::BuildSlot(TSharedRef<SBox, (ESPMode)1>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/SizeBoxSlot.cpp:37]
+libUnrealEditor-UMG.so!USizeBox::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/SizeBox.cpp:40]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UUserWidget::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/UserWidget.cpp:1143]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UCanvasPanelSlot::BuildSlot(TSharedRef<SConstraintCanvas, (ESPMode)1>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/CanvasPanelSlot.cpp:36]
+libUnrealEditor-UMG.so!UCanvasPanel::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/CanvasPanel.cpp:64]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UUserWidget::RebuildWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/UserWidget.cpp:1143]
+libUnrealEditor-UMG.so!UWidget::TakeWidget_Private(TFunctionRef<TSharedPtr<SObjectWidget, (ESPMode)1> (UUserWidget*, TSharedRef<SWidget, (ESPMode)1>)>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:991]
+libUnrealEditor-UMG.so!UWidget::TakeWidget() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Components/Widget.cpp:973]
+libUnrealEditor-UMG.so!UGameViewportSubsystem::AddToScreen(UWidget*, ULocalPlayer*, FGameViewportWidgetSlot&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Blueprint/GameViewportSubsystem.cpp:180]
+libUnrealEditor-UMG.so!UGameViewportSubsystem::AddWidget(UWidget*, FGameViewportWidgetSlot) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/Blueprint/GameViewportSubsystem.cpp:109]
+libUnrealEditor-UMG.so!UUserWidget::execAddToViewport(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/UMG/Private/UserWidget.cpp:1305]
+libUnrealEditor-CoreUObject.so!UFunction::Invoke(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:7460]
+libUnrealEditor-CoreUObject.so!UObject::CallFunction(FFrame&, void*, UFunction*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1175]
+libUnrealEditor-CoreUObject.so!UObject::execFinalFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:3278]
+libUnrealEditor-CoreUObject.so!UObject::ProcessContextOpcode(FFrame&, void*, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:509]
+libUnrealEditor-CoreUObject.so!ProcessLocalScriptFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:509]
+libUnrealEditor-CoreUObject.so!void ProcessScriptFunction<void (*)(UObject*, FFrame&, void*)>(UObject*, UFunction*, FFrame&, void*, void (*)(UObject*, FFrame&, void*)) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1067]
+libUnrealEditor-CoreUObject.so!ProcessLocalFunction(UObject*, UFunction*, FFrame&, void*)::$_0::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1320]
+libUnrealEditor-CoreUObject.so!ProcessLocalFunction(UObject*, UFunction*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1337]
+libUnrealEditor-CoreUObject.so!UObject::execLocalFinalFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:3292]
+libUnrealEditor-CoreUObject.so!ProcessLocalScriptFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:509]
+libUnrealEditor-CoreUObject.so!UObject::ProcessInternal(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1364]
+libUnrealEditor-CoreUObject.so!UFunction::Invoke(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:7460]
+libUnrealEditor-CoreUObject.so!UObject::ProcessEvent(UFunction*, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:2209]
+libUnrealEditor-Engine.so!AActor::ProcessEvent(UFunction*, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Actor.cpp:1456]
+libUnrealEditor-Engine.so!AActor::BeginPlay() [/mnt/horde/++UE5/Sync/Engine/Source/../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/Actor.gen.cpp:7878]
+libUnrealEditor-Engine.so!APlayerController::BeginPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/PlayerController.cpp:1538]
+libUnrealEditor-Engine.so!AActor::DispatchBeginPlay(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Actor.cpp:4710]
+libUnrealEditor-Engine.so!AWorldSettings::NotifyBeginPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/WorldSettings.cpp:362]
+libUnrealEditor-Engine.so!AGameMode::HandleMatchHasStarted() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameMode.cpp:221]
+libUnrealEditor-Engine.so!AGameMode::SetMatchState(FName) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameMode.cpp:339]
+libUnrealEditor-Engine.so!AGameMode::StartMatch() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameMode.cpp:200]
+libUnrealEditor-Engine.so!AGameMode::StartPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameMode.cpp:144]
+libUnrealEditor-Engine.so!UWorld::BeginPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/World.cpp:5915]
+libUnrealEditor-Engine.so!UGameInstance::StartPlayInEditorGameInstance(ULocalPlayer*, FGameInstancePIEParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameInstance.cpp:565]
+libUnrealEditor-UnrealEd.so!UEditorEngine::CreateInnerProcessPIEGameInstance(FRequestPlaySessionParams&, FGameInstancePIEParameters const&, int) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:3182]
+libUnrealEditor-UnrealEd.so!UEditorEngine::OnLoginPIEComplete_Deferred(int, bool, FString, FPieLoginStruct) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1626]
+libUnrealEditor-UnrealEd.so!UEditorEngine::CreateNewPlayInEditorInstance(FRequestPlaySessionParams&, bool, EPlayNetMode) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1886]
+libUnrealEditor-UnrealEd.so!UEditorEngine::StartPlayInEditorSession(FRequestPlaySessionParams&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:2909]
+libUnrealEditor-UnrealEd.so!UEditorEngine::StartQueuedPlaySessionRequestImpl() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1191]
+libUnrealEditor-UnrealEd.so!UEditorEngine::StartQueuedPlaySessionRequest() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1101]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:2037]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdEngine.cpp:530]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5619]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:60]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x29d8f)
+libc.so.6!__libc_start_main(+0x7f)
+UnrealEditor!_start [/home/dinzai/Documents/GameEngines/UnrealEngine_5.6.1/Engine/Binaries/Linux/UnrealEditor:-1]
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
